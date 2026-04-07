@@ -6,14 +6,15 @@
     <title>BALAM | Escultura Monumental</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=Montserrat:wght@200;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
 
     <header>
         <div class="nav-container">
-            <h1 class="logo">BALAM</h1>
-            <nav>
-                <a href="#" class="nav-link active" data-target="home">Inicio</a>
+            <h1 class="logo nav-link active" data-target="home">BALAM</h1>
+            
+            <nav class="menu-links">
                 <a href="#" class="nav-link" data-target="galeria">Catálogo</a>
                 <a href="#" class="nav-link" data-target="nosotros">La Firma</a>
                 <a href="#" class="nav-link" data-target="contacto">Contacto</a>
@@ -27,7 +28,7 @@
             <div class="hero">
                 <p class="subtitle">Ónix & Mármol</p>
                 <h2>La eternidad tallada en piedra</h2>
-                <button class="btn-fancy" data-target="galeria">Explorar Colección</button>
+                <button class="btn-fancy nav-link" data-target="galeria">Explorar Colección</button>
             </div>
         </section>
 
@@ -35,19 +36,221 @@
             <div class="container">
                 <h2 class="section-title">Adquisiciones Exclusivas</h2>
                 <div class="gallery-grid">
-                    <div class="art-card">
-                        <img src="tu-foto-pantera.jpg" alt="Pantera de Mármol">
-                        <div class="art-info">
-                            <h3>Pantera en Acecho</h3>
-                            <p>Mármol Negro Belga | Pieza Única</p>
-                        </div>
+                    <div class="art-card" onclick="openLightbox('https://lh3.googleusercontent.com/u/0/d/1Ou6uZiqUYlXLgjFzTAQmrg0-i7NKmJmm')">
+                        <img src="https://lh3.googleusercontent.com/u/0/d/1Ou6uZiqUYlXLgjFzTAQmrg0-i7NKmJmm" alt="Pantera">
+                        <div class="art-info"><h3>Pantera en Acecho</h3><p>Mármol Negro</p></div>
                     </div>
-                    <div class="art-card">
-                        <img src="tu-foto-dragon.jpg" alt="Dragón de Ónix">
-                        <div class="art-info">
-                            <h3>Dragón Imperial</h3>
-                            <p>Ónix Tallado a Mano | 120cm</p>
-                        </div>
+                    <div class="art-card" onclick="openLightbox('https://lh3.googleusercontent.com/u/0/d/1X0veyiz0KiV3NDNCea7FOJXw1MaCjW7R')">
+                        <img src="https://lh3.googleusercontent.com/u/0/d/1X0veyiz0KiV3NDNCea7FOJXw1MaCjW7R" alt="Dragón">
+                        <div class="art-info"><h3>Dragón Imperial</h3><p>Ónix Tallado</p></div>
+                    </div>
+                    <div class="art-card" onclick="openLightbox('https://lh3.googleusercontent.com/u/0/d/1sQMo1QglHa0T_aU0NhVrj_1pldMMdBS')">
+                        <img src="https://lh3.googleusercontent.com/u/0/d/1333mhznPsYNozqEsJpLje5JKATF7YMP_" alt="Obra III">
+                        <div class="art-info"><h3>Estatua</h3><p>Mármol Veteado y Ónix Natural</p></div>
+                    </div>
+                    <div class="art-card" onclick="openLightbox('http://googleusercontent.com/profile/picture/7')">
+                        <img src="https://lh3.googleusercontent.com/u/0/d/1HsOxIo84T1URAmYeE8RSlXaTKeIA_RpK" alt="Obra IV">
+                        <div class="art-info"><h3>Estatua</h3><p>Mármol Veteado y Ónix Natural</p></div>
+                    </div>
+                    <div class="art-card" onclick="openLightbox('https://lh3.googleusercontent.com/u/0/d/1JsByLeS_8YRGxR5d1M-FQ7-v7Sh_kXOl')">
+                        <img src="https://lh3.googleusercontent.com/u/0/d/1JsByLeS_8YRGxR5d1M-FQ7-v7Sh_kXOl">
+                        <div class="art-info"><h3>Estatua</h3><p>Mármol Veteado y Ónix Natural</p></div>
+                    </div>
+                    <div class="art-card" onclick="openLightbox('https://lh3.googleusercontent.com/u/0/d/1v41O2Bg7thnhB2qGL3rpiTvu8FVXG0Df')">
+                        <img src="https://lh3.googleusercontent.com/u/0/d/1v41O2Bg7thnhB2qGL3rpiTvu8FVXG0Df">
+                        <div class="art-info"><h3>Estatua</h3><p>Mármol Veteado y Ónix Natural</p></div>
+                    </div>
+                    <div class="art-card" onclick="openLightbox('https://lh3.googleusercontent.com/u/0/d/1ixOE8cy8u45WqxCKw2NrfBSrz8960xfv')">
+                        <img src="https://lh3.googleusercontent.com/u/0/d/1ixOE8cy8u45WqxCKw2NrfBSrz8960xfv">
+                        <div class="art-info"><h3>Estatua</h3><p>Mármol Veteado y Ónix Natural</p></div>
+                    </div>
+                    <div class="art-card" onclick="openLightbox('https://lh3.googleusercontent.com/u/0/d/1ql7d7wG8vTFMuJPUdOBG72c9YwP0haHE')">
+                        <img src="https://lh3.googleusercontent.com/u/0/d/1ql7d7wG8vTFMuJPUdOBG72c9YwP0haHE">
+                        <div class="art-info"><h3>Estatua</h3><p>Mármol Veteado y Ónix Natural</p></div>
+                    </div>
+                    <div class="art-card" onclick="openLightbox('https://lh3.googleusercontent.com/u/0/d/10gqWv0tQt9tUzYXXm1GXgJuxOne_kJVv')">
+                        <img src="https://lh3.googleusercontent.com/u/0/d/10gqWv0tQt9tUzYXXm1GXgJuxOne_kJVv">
+                        <div class="art-info"><h3>Estatua</h3><p>Mármol Veteado y Ónix Natural</p></div>
+                    </div>
+                    <div class="art-card" onclick="openLightbox('https://lh3.googleusercontent.com/u/0/d/1ZjO-HjkUihsG40Or_YqyNzTUy2ymv_mh')">
+                        <img src="https://lh3.googleusercontent.com/u/0/d/1ZjO-HjkUihsG40Or_YqyNzTUy2ymv_mh">
+                        <div class="art-info"><h3>Estatua</h3><p>Mármol Veteado y Ónix Natural</p></div>
+                    </div>
+                    <div class="art-card" onclick="openLightbox('https://lh3.googleusercontent.com/u/0/d/1W-nxAybh6bOMXWSL8TxS8KmtFoENGQV-')">
+                        <img src="https://lh3.googleusercontent.com/u/0/d/1W-nxAybh6bOMXWSL8TxS8KmtFoENGQV-">
+                        <div class="art-info"><h3>Estatua</h3><p>Mármol Veteado y Ónix Natural</p></div>
+                    </div>
+                    <div class="art-card" onclick="openLightbox('https://lh3.googleusercontent.com/u/0/d/1Wyw07fHX9W6LRkO1CdKPNqWB0xTDGlcS')">
+                        <img src="https://lh3.googleusercontent.com/u/0/d/1Wyw07fHX9W6LRkO1CdKPNqWB0xTDGlcS">
+                        <div class="art-info"><h3>Estatua</h3><p>Mármol Veteado y Ónix Natural</p></div>
+                    </div>
+                    <div class="art-card" onclick="openLightbox('https://lh3.googleusercontent.com/u/0/d/1bKmcxHTlXTWO2zhYyxClTwwKgzOtr0Vs')">
+                        <img src="https://lh3.googleusercontent.com/u/0/d/1bKmcxHTlXTWO2zhYyxClTwwKgzOtr0Vs">
+                        <div class="art-info"><h3>Estatua</h3><p>Mármol Veteado y Ónix Natural</p></div>
+                    </div>
+                    <div class="art-card" onclick="openLightbox('https://lh3.googleusercontent.com/u/0/d/1TPahtQUFGuAXl337f_RvgVh0hKHJ2_gc')">
+                        <img src="https://lh3.googleusercontent.com/u/0/d/1TPahtQUFGuAXl337f_RvgVh0hKHJ2_gc">
+                        <div class="art-info"><h3>Estatua</h3><p>Mármol Veteado y Ónix Natural</p></div>
+                    </div>
+                    <div class="art-card" onclick="openLightbox('https://lh3.googleusercontent.com/u/0/d/1z7hINCttE1TjvTIugwMtTTvYEoT6Hg_m')">
+                        <img src="https://lh3.googleusercontent.com/u/0/d/1z7hINCttE1TjvTIugwMtTTvYEoT6Hg_m">
+                        <div class="art-info"><h3>Estatua</h3><p>Mármol Veteado y Ónix Natural</p></div>
+                    </div>
+                    <div class="art-card" onclick="openLightbox('https://lh3.googleusercontent.com/u/0/d/17rzuiNDWGh_qE_ynbOulO26HDAiWuwJ5')">
+                        <img src="https://lh3.googleusercontent.com/u/0/d/17rzuiNDWGh_qE_ynbOulO26HDAiWuwJ5">
+                        <div class="art-info"><h3>Estatua</h3><p>Mármol Veteado y Ónix Natural</p></div>
+                    </div>
+                    <div class="art-card" onclick="openLightbox('https://lh3.googleusercontent.com/u/0/d/1EKKkdCB74u4oy8syWA5BkF_vK7v-NFjM')">
+                        <img src="https://lh3.googleusercontent.com/u/0/d/1EKKkdCB74u4oy8syWA5BkF_vK7v-NFjM">
+                        <div class="art-info"><h3>Estatua</h3><p>Mármol Veteado y Ónix Natural</p></div>
+                    </div>
+                    <div class="art-card" onclick="openLightbox('https://lh3.googleusercontent.com/u/0/d/1f8cBmB6khXDIIGk4BGjG6kw97km_07l1')">
+                        <img src="https://lh3.googleusercontent.com/u/0/d/1f8cBmB6khXDIIGk4BGjG6kw97km_07l1">
+                        <div class="art-info"><h3>Estatua</h3><p>Mármol Veteado y Ónix Natural</p></div>
+                    </div>
+                    <div class="art-card" onclick="openLightbox('https://lh3.googleusercontent.com/u/0/d/1XTjzxILRnanYdJJ8vudJxv761xEt9bCk')">
+                        <img src="https://lh3.googleusercontent.com/u/0/d/1XTjzxILRnanYdJJ8vudJxv761xEt9bCk">
+                        <div class="art-info"><h3>Estatua</h3><p>Mármol Veteado y Ónix Natural</p></div>
+                    </div>
+                    <div class="art-card" onclick="openLightbox('https://lh3.googleusercontent.com/u/0/d/1m-Z91LH-VcUK6jJm_8pF4IlZxUlSBnUa')">
+                        <img src="https://lh3.googleusercontent.com/u/0/d/1m-Z91LH-VcUK6jJm_8pF4IlZxUlSBnUa">
+                        <div class="art-info"><h3>Estatua</h3><p>Mármol Veteado y Ónix Natural</p></div>
+                    </div>
+                    <div class="art-card" onclick="openLightbox('https://lh3.googleusercontent.com/u/0/d/1YJaq2e1OnQz39TwmM6-hCdTxRDs7QQ7Q')">
+                        <img src="https://lh3.googleusercontent.com/u/0/d/1YJaq2e1OnQz39TwmM6-hCdTxRDs7QQ7Q">
+                        <div class="art-info"><h3>Estatua</h3><p>Mármol Veteado y Ónix Natural</p></div>
+                    </div>
+                    <div class="art-card" onclick="openLightbox('https://lh3.googleusercontent.com/u/0/d/1LKCY53EwQVgS4tpeMRvx9W9ANXqQSieG')">
+                        <img src="https://lh3.googleusercontent.com/u/0/d/1LKCY53EwQVgS4tpeMRvx9W9ANXqQSieG">
+                        <div class="art-info"><h3>Estatua</h3><p>Mármol Veteado y Ónix Natural</p></div>
+                    </div>
+                    <div class="art-card" onclick="openLightbox('https://lh3.googleusercontent.com/u/0/d/1zzC2tF2KjEpNlXTSIh4ozTrjA3QcTFEa')">
+                        <img src="https://lh3.googleusercontent.com/u/0/d/1zzC2tF2KjEpNlXTSIh4ozTrjA3QcTFEa">
+                        <div class="art-info"><h3>Estatua</h3><p>Mármol Veteado y Ónix Natural</p></div>
+                    </div>
+                    <div class="art-card" onclick="openLightbox('https://lh3.googleusercontent.com/u/0/d/1CCIN4FwimwtlBWa34P7s7da8X0TSaDe7')">
+                        <img src="https://lh3.googleusercontent.com/u/0/d/1CCIN4FwimwtlBWa34P7s7da8X0TSaDe7">
+                        <div class="art-info"><h3>Estatua</h3><p>Mármol Veteado y Ónix Natural</p></div>
+                    </div>
+                    <div class="art-card" onclick="openLightbox('https://lh3.googleusercontent.com/u/0/d/144kTEblGWVBdvsDvH8bkEVyQwswO7gN3')">
+                        <img src="https://lh3.googleusercontent.com/u/0/d/144kTEblGWVBdvsDvH8bkEVyQwswO7gN3">
+                        <div class="art-info"><h3>Estatua</h3><p>Mármol Veteado y Ónix Natural</p></div>
+                    </div>
+                    <div class="art-card" onclick="openLightbox('https://lh3.googleusercontent.com/u/0/d/10XHBRZxXLZxF6EsuhKTFazFnXGwhajV6')">
+                        <img src="https://lh3.googleusercontent.com/u/0/d/10XHBRZxXLZxF6EsuhKTFazFnXGwhajV6">
+                        <div class="art-info"><h3>Estatua</h3><p>Mármol Veteado y Ónix Natural</p></div>
+                    </div>
+                    <div class="art-card" onclick="openLightbox('https://lh3.googleusercontent.com/u/0/d/1lADYS8gpNk05-TgbS51ux-xmsVSEPDQo')">
+                        <img src="https://lh3.googleusercontent.com/u/0/d/1lADYS8gpNk05-TgbS51ux-xmsVSEPDQo">
+                        <div class="art-info"><h3>Estatua</h3><p>Mármol Veteado y Ónix Natural</p></div>
+                    </div>
+                    <div class="art-card" onclick="openLightbox('https://lh3.googleusercontent.com/u/0/d/1JIGifcbfzHgWR8OBv1WnhfNhW5o4NkMK')">
+                        <img src="https://lh3.googleusercontent.com/u/0/d/1JIGifcbfzHgWR8OBv1WnhfNhW5o4NkMK">
+                        <div class="art-info"><h3>Estatua</h3><p>Mármol Veteado y Ónix Natural</p></div>
+                    </div>
+                    <div class="art-card" onclick="openLightbox('https://lh3.googleusercontent.com/u/0/d/1RWDVJf68WFr2MBBjopwdONvv99-VHvEv')">
+                        <img src="https://lh3.googleusercontent.com/u/0/d/1RWDVJf68WFr2MBBjopwdONvv99-VHvEv">
+                        <div class="art-info"><h3>Estatua</h3><p>Mármol Veteado y Ónix Natural</p></div>
+                    </div>
+                    <div class="art-card" onclick="openLightbox('https://lh3.googleusercontent.com/u/0/d/1yGCUJHy4vyIyIBsmVPWB-FIobsRQkJLz')">
+                        <img src="https://lh3.googleusercontent.com/u/0/d/1yGCUJHy4vyIyIBsmVPWB-FIobsRQkJLz">
+                        <div class="art-info"><h3>Estatua</h3><p>Mármol Veteado y Ónix Natural</p></div>
+                    </div>
+                    <div class="art-card" onclick="openLightbox('https://lh3.googleusercontent.com/u/0/d/1X8HeGNdUqRnioxh-AQMLuqK9XIXuygty')">
+                        <img src="https://lh3.googleusercontent.com/u/0/d/1X8HeGNdUqRnioxh-AQMLuqK9XIXuygty">
+                        <div class="art-info"><h3>Estatua</h3><p>Mármol Veteado y Ónix Natural</p></div>
+                    </div>
+                    <div class="art-card" onclick="openLightbox('https://lh3.googleusercontent.com/u/0/d/1VQONZeVsidR7ki-Wr2--U2uaEpv2ce7r')">
+                        <img src="https://lh3.googleusercontent.com/u/0/d/1VQONZeVsidR7ki-Wr2--U2uaEpv2ce7r">
+                        <div class="art-info"><h3>Estatua</h3><p>Mármol Veteado y Ónix Natural</p></div>
+                    </div>
+                    <div class="art-card" onclick="openLightbox('https://lh3.googleusercontent.com/u/0/d/1BhMo1XNMBKiUV6k19fuU1vMqcHrOAJG3')">
+                        <img src="https://lh3.googleusercontent.com/u/0/d/1BhMo1XNMBKiUV6k19fuU1vMqcHrOAJG3">
+                        <div class="art-info"><h3>Estatua</h3><p>Mármol Veteado y Ónix Natural</p></div>
+                    </div>
+                    <div class="art-card" onclick="openLightbox('https://lh3.googleusercontent.com/u/0/d/164VgfwPAzXCB1GD8CusMG6SU-p8C3ZqL')">
+                        <img src="https://lh3.googleusercontent.com/u/0/d/164VgfwPAzXCB1GD8CusMG6SU-p8C3ZqL">
+                        <div class="art-info"><h3>Estatua</h3><p>Mármol Veteado y Ónix Natural</p></div>
+                    </div>
+                    <div class="art-card" onclick="openLightbox('https://lh3.googleusercontent.com/u/0/d/1a6yjH6dEyydOfSaBxXjGF875LlxJoul2')">
+                        <img src="https://lh3.googleusercontent.com/u/0/d/1a6yjH6dEyydOfSaBxXjGF875LlxJoul2">
+                        <div class="art-info"><h3>Estatua</h3><p>Mármol Veteado y Ónix Natural</p></div>
+                    </div>
+                    <div class="art-card" onclick="openLightbox('https://lh3.googleusercontent.com/u/0/d/1SRIJ_aZeSY7NTudDyfqQoZd9STtsEtnu')">
+                        <img src="https://lh3.googleusercontent.com/u/0/d/1SRIJ_aZeSY7NTudDyfqQoZd9STtsEtnu">
+                        <div class="art-info"><h3>Estatua</h3><p>Mármol Veteado y Ónix Natural</p></div>
+                    </div>
+                    <div class="art-card" onclick="openLightbox('https://lh3.googleusercontent.com/u/0/d/1a9T7fK8bAh1VUT4WeHOTb38xZ3EW_0BT')">
+                        <img src="https://lh3.googleusercontent.com/u/0/d/1a9T7fK8bAh1VUT4WeHOTb38xZ3EW_0BT">
+                        <div class="art-info"><h3>Estatua</h3><p>Mármol Veteado y Ónix Natural</p></div>
+                    </div>
+                    <div class="art-card" onclick="openLightbox('https://lh3.googleusercontent.com/u/0/d/1416uBJxGkMt8bORyGT0FLEyuEZhF9-dB')">
+                        <img src="https://lh3.googleusercontent.com/u/0/d/1416uBJxGkMt8bORyGT0FLEyuEZhF9-dB">
+                        <div class="art-info"><h3>Estatua</h3><p>Mármol Veteado y Ónix Natural</p></div>
+                    </div>
+                    <div class="art-card" onclick="openLightbox('https://lh3.googleusercontent.com/u/0/d/1DtL2IKQh_VUfyZVCZlJxnONDgi6XN5bh')">
+                        <img src="https://lh3.googleusercontent.com/u/0/d/1DtL2IKQh_VUfyZVCZlJxnONDgi6XN5bh">
+                        <div class="art-info"><h3>Estatua</h3><p>Mármol Veteado y Ónix Natural</p></div>
+                    </div>
+                    <div class="art-card" onclick="openLightbox('https://lh3.googleusercontent.com/u/0/d/1hPCtV515hYssBci44puQl0N6y0kSC_tZ')">
+                        <img src="https://lh3.googleusercontent.com/u/0/d/1hPCtV515hYssBci44puQl0N6y0kSC_tZ">
+                        <div class="art-info"><h3>Estatua</h3><p>Mármol Veteado y Ónix Natural</p></div>
+                    </div>
+                    <div class="art-card" onclick="openLightbox('https://lh3.googleusercontent.com/u/0/d/1Z60Cr30fR9HWX5lrL1nxe3DU_g_Axcv6')">
+                        <img src="https://lh3.googleusercontent.com/u/0/d/1Z60Cr30fR9HWX5lrL1nxe3DU_g_Axcv6">
+                        <div class="art-info"><h3>Estatua</h3><p>Mármol Veteado y Ónix Natural</p></div>
+                    </div>
+                    <div class="art-card" onclick="openLightbox('https://lh3.googleusercontent.com/u/0/d/1i32quSpJ4kmpqXejykDvVHdtAI-12R0Z')">
+                        <img src="https://lh3.googleusercontent.com/u/0/d/1i32quSpJ4kmpqXejykDvVHdtAI-12R0Z">
+                        <div class="art-info"><h3>Estatua</h3><p>Mármol Veteado y Ónix Natural</p></div>
+                    </div>
+                    <div class="art-card" onclick="openLightbox('https://lh3.googleusercontent.com/u/0/d/1V7TE82xGPe6MdAXfx0mjONxXgxa_T4-0')">
+                        <img src="https://lh3.googleusercontent.com/u/0/d/1V7TE82xGPe6MdAXfx0mjONxXgxa_T4-0">
+                        <div class="art-info"><h3>Estatua</h3><p>Mármol Veteado y Ónix Natural</p></div>
+                    </div>
+                    <div class="art-card" onclick="openLightbox('https://lh3.googleusercontent.com/u/0/d/1aMujfu1L0Upic_LgMUBAT3OUc6tFKqnP')">
+                        <img src="https://lh3.googleusercontent.com/u/0/d/1aMujfu1L0Upic_LgMUBAT3OUc6tFKqnP">
+                        <div class="art-info"><h3>Estatua</h3><p>Mármol Veteado y Ónix Natural</p></div>
+                    </div>
+                    <div class="art-card" onclick="openLightbox('https://lh3.googleusercontent.com/u/0/d/1d-8lJiX9bM9cPQ34u52okK5XjKB7nuK4')">
+                        <img src="https://lh3.googleusercontent.com/u/0/d/1d-8lJiX9bM9cPQ34u52okK5XjKB7nuK4">
+                        <div class="art-info"><h3>Estatua</h3><p>Mármol Veteado y Ónix Natural</p></div>
+                    </div>
+                    <div class="art-card" onclick="openLightbox('https://lh3.googleusercontent.com/u/0/d/1JDR3xnXyj7DmCrgLciQdkqb6gox-ru_e')">
+                        <img src="https://lh3.googleusercontent.com/u/0/d/1JDR3xnXyj7DmCrgLciQdkqb6gox-ru_e">
+                        <div class="art-info"><h3>Estatua</h3><p>Mármol Veteado y Ónix Natural</p></div>
+                    </div>
+                    <div class="art-card" onclick="openLightbox('https://lh3.googleusercontent.com/u/0/d/1zWCv9T7_3D-xM0XPLCiDzq1_3cgjKGDH')">
+                        <img src="https://lh3.googleusercontent.com/u/0/d/1zWCv9T7_3D-xM0XPLCiDzq1_3cgjKGDH">
+                        <div class="art-info"><h3>Estatua</h3><p>Mármol Veteado y Ónix Natural</p></div>
+                    </div>
+                    <div class="art-card" onclick="openLightbox('https://lh3.googleusercontent.com/u/0/d/1H2Pj6agL3pGcum363Y-cbOPDUnWFYqCL')">
+                        <img src="https://lh3.googleusercontent.com/u/0/d/1H2Pj6agL3pGcum363Y-cbOPDUnWFYqCL">
+                        <div class="art-info"><h3>Estatua</h3><p>Mármol Veteado y Ónix Natural</p></div>
+                    </div>
+                    <div class="art-card" onclick="openLightbox('https://lh3.googleusercontent.com/u/0/d/1XezyqV-lyUJzvQ_06XwutzZRK8uUYw0e')">
+                        <img src="https://lh3.googleusercontent.com/u/0/d/1XezyqV-lyUJzvQ_06XwutzZRK8uUYw0e">
+                        <div class="art-info"><h3>Estatua</h3><p>Mármol Veteado y Ónix Natural</p></div>
+                    </div>
+                    <div class="art-card" onclick="openLightbox('https://lh3.googleusercontent.com/u/0/d/1j6JcCL43E0LsESMPuI5SrX_xlJg6PUjm')">
+                        <img src="https://lh3.googleusercontent.com/u/0/d/1j6JcCL43E0LsESMPuI5SrX_xlJg6PUjm">
+                        <div class="art-info"><h3>Estatua</h3><p>Mármol Veteado y Ónix Natural</p></div>
+                    </div>
+                    <div class="art-card" onclick="openLightbox('https://lh3.googleusercontent.com/u/0/d/1ria2XqMht-9zgtxWi4ZpY7xkC16DNLlc')">
+                        <img src="https://lh3.googleusercontent.com/u/0/d/1ria2XqMht-9zgtxWi4ZpY7xkC16DNLlc">
+                        <div class="art-info"><h3>Estatua</h3><p>Mármol Veteado y Ónix Natural</p></div>
+                    </div>
+                    <div class="art-card" onclick="openLightbox('https://lh3.googleusercontent.com/u/0/d/1keUyGMs7O3s02aJXoBE6tJKM2j5QoXsO')">
+                        <img src="https://lh3.googleusercontent.com/u/0/d/1keUyGMs7O3s02aJXoBE6tJKM2j5QoXsO">
+                        <div class="art-info"><h3>Estatua</h3><p>Mármol Veteado y Ónix Natural</p></div>
+                    </div>
+                    <div class="art-card" onclick="openLightbox('https://lh3.googleusercontent.com/u/0/d/1YLX55z22LOFCWB1OLRhriSM49C-B9i_w')">
+                        <img src="https://lh3.googleusercontent.com/u/0/d/1YLX55z22LOFCWB1OLRhriSM49C-B9i_w">
+                        <div class="art-info"><h3>Estatua</h3><p>Mármol Veteado y Ónix Natural</p></div>
+                    </div>
+                    <div class="art-card" onclick="openLightbox('https://lh3.googleusercontent.com/u/0/d/1KT-_QxfHvThOMCp0Og1LJQFP2NVWqwGt')">
+                        <img src="https://lh3.googleusercontent.com/u/0/d/1KT-_QxfHvThOMCp0Og1LJQFP2NVWqwGt">
+                        <div class="art-info"><h3>Estatua</h3><p>Mármol Veteado y Ónix Natural</p></div>
                     </div>
                 </div>
             </div>
@@ -56,22 +259,54 @@
         <section id="nosotros" class="page hidden">
             <div class="container center-text">
                 <h2 class="section-title">Sobre Balam</h2>
-                <p class="luxury-text">Redefinimos el lujo espacial. Cada bloque de piedra natural es cuidadosamente seleccionado y transformado en una obra de arte monumental, diseñada para ser el punto focal de residencias y colecciones privadas de primer nivel.</p>
+                <p class="luxury-text">Redefinimos el lujo espacial. Cada bloque de piedra natural es cuidadosamente seleccionado y transformado en una obra de arte monumental, diseñada para ser el punto focal de residencias y colecciones privadas de primer nivel. Todas nuestras esculturas son importadas de diseñadores de puebla.</p>
+            </div>
+            <div class="container center-text">
+                <h2 class="section-title">Como funciona?</h2>
+                <p class="luxury-text">Seleccionamos bloques únicos de ónix y mármol con vetas y transparencias extraordinarias para crear obras personalizadas bajo pedido. Cada pieza es tallada a mano por maestros artesanos siguiendo sus especificaciones; debido a la naturaleza orgánica de la piedra, no existen dos piezas iguales. Su escultura exclusiva se entrega mediante un servicio de guante blanco para garantizar una llegada impecable.</p>
             </div>
         </section>
 
         <section id="contacto" class="page hidden">
             <div class="container center-text">
                 <h2 class="section-title">Consultas Privadas</h2>
-                <p class="luxury-text">Para información sobre disponibilidad, envíos internacionales o comisiones arquitectónicas a medida, nuestro equipo está a su disposición.</p>
+                <p class="luxury-text">Si esta interesando en una de estas esculturas persosonalizadas, contactense con nuestro equipo, con los detalles sobre el materias y las medidas</p>
                 <div class="contact-info">
-                    <p>contacto@balam-galeria.com</p>
-                    <p>+52 1 234 567 8900</p>
+                    <p>balamsculptures@gmail.com</p>
+                    <p>@balamsculptures</p>
+                    <p>+1 561 501 8204</p>
+                </div>
+                <div class="contact-links">
+                    <a href="https://wa.me/15615018204" target="_blank" class="social-btn">
+                        <i class="fab fa-whatsapp"></i> WhatsApp Directo
+                    </a>
+                    <a href="https://instagram.com/balamsculptures" target="_blank" class="social-btn">
+                        <i class="fab fa-instagram"></i> Instagram
+                    </a>
                 </div>
             </div>
         </section>
     </main>
 
     <script src="script.js"></script>
+    <div id="lightbox" class="lightbox">
+        <span class="close-lightbox" onclick="closeLightbox()">×</span>
+        
+        <div class="lightbox-nav left" onclick="changeImage(-1)">
+            <i class="fas fa-chevron-left"></i>
+        </div>
+        
+        <div class="lightbox-content">
+            <img id="lightbox-img" src="" alt="Escultura">
+            <div class="lightbox-caption">
+                <h3 id="lightbox-title">Título</h3>
+                <p id="lightbox-desc">Material</p>
+            </div>
+        </div>
+
+        <div class="lightbox-nav right" onclick="changeImage(1)">
+            <i class="fas fa-chevron-right"></i>
+        </div>
+    </div>
 </body>
 </html>
