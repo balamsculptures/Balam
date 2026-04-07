@@ -1,0 +1,112 @@
+/* Reseteo básico */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+    background-color: #fdfdfd; /* Blanco roto, muy limpio */
+    color: #1a1a1a; /* Negro suave, no absoluto */
+    font-family: 'Montserrat', sans-serif;
+    overflow-y: scroll;
+}
+
+h1, h2, h3 {
+    font-family: 'Cinzel', serif; /* Tipografía estilo Roma/Museo */
+    font-weight: 400;
+    letter-spacing: 3px;
+}
+
+/* Navegación */
+header {
+    position: fixed;
+    top: 0; width: 100%;
+    padding: 40px 5vw;
+    background: rgba(253, 253, 253, 0.98);
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo { font-size: 2.2rem; letter-spacing: 6px; }
+
+nav a {
+    text-decoration: none;
+    color: #a0a0a0;
+    margin-left: 45px;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: color 0.5s ease;
+}
+
+nav a:hover, nav a.active { color: #000; }
+
+/* Control de Páginas y Animación de Fundido */
+main { padding-top: 130px; min-height: 100vh; }
+
+.page {
+    display: none; /* Oculta todas las páginas por defecto */
+    opacity: 0;
+    animation: fadeUp 1s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.page.active { display: block; } /* Solo muestra la página activa */
+
+@keyframes fadeUp {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Estilos de la Portada (Hero) */
+.hero {
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.subtitle { font-size: 0.8rem; letter-spacing: 5px; color: #777; margin-bottom: 25px; text-transform: uppercase; }
+.hero h2 { font-size: 3.5rem; margin-bottom: 50px; text-transform: uppercase;}
+
+/* Botón Minimalista */
+.btn-fancy {
+    background: transparent;
+    border: 1px solid #1a1a1a;
+    padding: 18px 45px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+
+.btn-fancy:hover { background: #1a1a1a; color: #fff; }
+
+/* Galería */
+.container { max-width: 1200px; margin: 0 auto; padding: 40px 20px; }
+.section-title { text-align: center; font-size: 2.2rem; margin-bottom: 80px; text-transform: uppercase;}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 80px;
+}
+
+.art-card img {
+    width: 100%;
+    filter: brightness(0.95);
+    transition: filter 0.6s ease, transform 0.6s ease;
+}
+
+.art-card:hover img { filter: brightness(1.05); transform: scale(1.02); }
+
+.art-info { text-align: center; margin-top: 25px; }
+.art-info h3 { font-size: 1.3rem; margin-bottom: 8px; }
+.art-info p { font-size: 0.75rem; color: #888; text-transform: uppercase; letter-spacing: 2px; }
+
+/* Textos Generales (Nosotros y Contacto) */
+.center-text { text-align: center; max-width: 800px; margin: 0 auto; }
+.luxury-text { font-size: 1.2rem; line-height: 2.2; color: #555; margin-bottom: 50px; font-weight: 200; }
+.contact-info p { font-family: 'Cinzel', serif; font-size: 1.8rem; margin-bottom: 15px; color: #1a1a1a;}

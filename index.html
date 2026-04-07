@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BALAM | Escultura Monumental</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=Montserrat:wght@200;400&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <div class="nav-container">
+            <h1 class="logo">BALAM</h1>
+            <nav>
+                <a href="#" class="nav-link active" data-target="home">Inicio</a>
+                <a href="#" class="nav-link" data-target="galeria">Catálogo</a>
+                <a href="#" class="nav-link" data-target="nosotros">La Firma</a>
+                <a href="#" class="nav-link" data-target="contacto">Contacto</a>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main-content">
+        
+        <section id="home" class="page active">
+            <div class="hero">
+                <p class="subtitle">Ónix & Mármol</p>
+                <h2>La eternidad tallada en piedra</h2>
+                <button class="btn-fancy" data-target="galeria">Explorar Colección</button>
+            </div>
+        </section>
+
+        <section id="galeria" class="page hidden">
+            <div class="container">
+                <h2 class="section-title">Adquisiciones Exclusivas</h2>
+                <div class="gallery-grid">
+                    <div class="art-card">
+                        <img src="tu-foto-pantera.jpg" alt="Pantera de Mármol">
+                        <div class="art-info">
+                            <h3>Pantera en Acecho</h3>
+                            <p>Mármol Negro Belga | Pieza Única</p>
+                        </div>
+                    </div>
+                    <div class="art-card">
+                        <img src="tu-foto-dragon.jpg" alt="Dragón de Ónix">
+                        <div class="art-info">
+                            <h3>Dragón Imperial</h3>
+                            <p>Ónix Tallado a Mano | 120cm</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="nosotros" class="page hidden">
+            <div class="container center-text">
+                <h2 class="section-title">Sobre Balam</h2>
+                <p class="luxury-text">Redefinimos el lujo espacial. Cada bloque de piedra natural es cuidadosamente seleccionado y transformado en una obra de arte monumental, diseñada para ser el punto focal de residencias y colecciones privadas de primer nivel.</p>
+            </div>
+        </section>
+
+        <section id="contacto" class="page hidden">
+            <div class="container center-text">
+                <h2 class="section-title">Consultas Privadas</h2>
+                <p class="luxury-text">Para información sobre disponibilidad, envíos internacionales o comisiones arquitectónicas a medida, nuestro equipo está a su disposición.</p>
+                <div class="contact-info">
+                    <p>contacto@balam-galeria.com</p>
+                    <p>+52 1 234 567 8900</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
